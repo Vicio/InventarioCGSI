@@ -1,0 +1,473 @@
+﻿
+/*Fuentes utilizadas en la interfaz*/
+@font-face 
+{
+    font-family: "Futura Std Light";
+    src:
+        url('../Fuentes/FuturaStd-Light.otf') format('opentype'),
+        url('../Fuentes/FuturaStd-Light.woff') format('woff');
+    font-weight:normal;
+    font-style: normal;
+}
+@font-face 
+{
+    font-family: "Futura Std Book";
+    src:
+        url('../Fuentes/FuturaStd-Book.otf') format('opentype'),
+        url('../Fuentes/FuturaStd-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face 
+{
+    font-family: "Futura Std Medium";
+    src:
+        url('../Fuentes/FuturaStd-Medium.otf') format('opentype'),
+        url('../Fuentes/FuturaStd-Medium.woff') format('woff');
+    font-weight:normal;
+    font-style: normal;
+}
+@font-face 
+{
+    font-family: "Futura Std Heavy";
+    src:
+        url('../Fuentes/FuturaStd-Heavy.otf') format('opentype'),
+        url('../Fuentes/FuturaStd-Heavy.woff') format('woff');
+    font-weight:normal;
+    font-style: normal;
+}
+/*Esqueleto principal*/
+* 
+{
+    font-family:"Futura Std Book";
+    color:#666666;
+}
+body 
+{
+    background-color:#FFFFFF;
+    margin:0px;
+    min-width:1100px;
+}
+/*Aqui los elementos individuales*/
+#formaPrincipal 
+{
+    width:100%;
+}
+/*Borde superior de la página*/
+#bordeSuperior 
+{
+    height:50px;
+    min-width:1360px;
+    width:100%;
+    background-color:#13183A;
+}
+/*El área del encabezado donde se encuentran el logo, el título y el menu de navegación*/
+#encabezado 
+{
+    height:220px;
+    width:94%;
+    margin-left:3%;
+    background-color:#DEDEDE;
+    min-width:1280px;
+    box-shadow: -5px 10px 20px 0px #666666, 5px 10px 20px 0px #666666;
+}
+#areaTitulo 
+{
+    height:150px;
+    width:100%;
+}
+#logo 
+{
+    position:relative;
+    float:left;
+    margin-top:20px;
+    width:auto;
+    height:120px;
+    margin-left:5%;
+}
+    #logo img 
+    {
+        width:auto;
+        height:120px;
+    }
+#titulo 
+{
+    margin-top:20px;
+    margin-left:20px;
+    position:relative;
+    float:left;
+    width:auto;
+    font-size:32px;
+    height:40px;
+}
+
+      /*********************************************************************************************************************************************/
+     .menu
+	{
+    height:50px;
+    width:100%;
+		}
+     
+    .menu li{
+	display:inline-block;
+    position: relative;
+    z-index:100;
+	}
+     
+    .menu li a {
+    text-decoration:none;
+    padding:11px;
+    display:block;
+	color:#333333;
+     
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    -ms-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+    }
+     
+    .menu li a:hover, .menu li:hover > a{
+         color:#666666;
+	}	
+	    /* hide the second level menu */
+    .menu ul {
+	display: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    position: absolute;
+    top: 38px; /*espacio menu*/
+    left: 0px;
+	color:#333333;
+    }
+     
+    /* display second level menu on hover */
+    .menu li:hover > ul{ 
+	display: block;
+	}
+     
+    .menu ul li {
+	display:block;
+    float: none;
+    background:none;
+    margin:0;
+    padding:0;
+    }
+     
+    .menu ul li a {
+	font-size:12px;
+    font-weight:normal;
+    display:block;
+	color:#333333;
+    background-color:#EEEEEE;
+	}
+     
+    .menu ul li a:hover, .menu ul li:hover > a{
+    background-color:#F8F8F8;
+	    color:#333333;
+    border-left:3px solid #EE3423;
+    }
+
+    .menu ul ul {left: 149px;
+        top: 0px;
+        }
+
+
+    /*********************************************************************************************************************************************/
+
+
+#separadorEncabezado 
+{
+    height:20px;
+    background-color:#EE3423;
+    margin-left:3%;
+    margin-right:3%;
+    min-width:1280px;
+    box-shadow: -5px 10px 20px 0px #666666, 5px 10px 20px 0px #666666;
+}
+.SubTitulo
+{
+    padding-left:5%;
+}
+#cuerpo 
+{
+    height:auto;
+    min-height:800px;
+    width:auto;
+    margin-left:3%;
+    margin-right:3%;
+    background-color:#DEDEDE;
+    min-width:1280px;
+    box-shadow: -5px 10px 20px 0px #666666, 5px 10px 20px 0px #666666;
+}
+#pieDePagina 
+{
+    height:250px;
+    width:100%;
+    background-color:#13183A;
+}
+    #pieDePagina span 
+    {
+        position:relative;
+        float:left;
+        margin:30px;
+        width:1px;
+        height:180px;
+        background-color:#DEDEDE;
+    }
+#enlaces 
+{
+    position:relative;
+    float:left;
+    width:35%;
+    margin-top:110px;
+    height:30px;
+}
+
+    #enlaces div 
+    {
+        position:relative;
+        float:right;
+        margin-top:15px;
+        margin-left:5px;
+        margin-right:5px;
+        width:30px;
+        height:30px;
+        top: 0px;
+        left: -1px;
+}
+    /*Fix para el engine Webkit de safari*/
+    #enlaces img 
+    {
+        width:auto;
+        height:20px;
+    }
+#infoContacto 
+{
+    position:relative;
+    float:left;
+    width:20%;
+    height:180px;
+    margin-top:30px;
+}
+    #infoContacto h6 
+    {
+        font-size:14px;
+        font-family:'Futura Std Heavy';
+        color:#FFFFFF;
+    }
+    #infoContacto p 
+    {
+        font-size:14px;
+        color:#FFFFFF;
+    }
+#logosRedesSociales
+{
+    position:relative;
+    float:left;
+    width:35%;
+    margin-top:110px;
+    height:30px;
+}
+    #logosRedesSociales div 
+    {
+        position:relative;
+        float:left;
+        margin-left:10px;
+        width:30px;
+        height:30px;
+    }
+/*Apartado para las clases*/
+.cajasTexto 
+{
+    border: 1px solid #878786;
+    color:#878786;
+    width:175px;
+    }
+    .cajasTexto:focus
+    {
+        border-color:#0f205a;
+    }
+.tabla_td {
+    border-collapse:separate;
+    border-spacing:20px 20px;
+}
+.tabla_td .horizontal{
+    max-width:240px;
+    width:200px;
+}
+.botonesTablas
+{
+    color:#FFFFFF;
+    border-style:none;
+    width:auto;
+    margin:10px;
+    height:auto;
+    padding:5px;
+    background-color:#111547;
+}
+    .botonesTablas:hover 
+    {
+        background-color:#0f205a;
+    }
+.divTablas
+{
+    width:90%;
+    margin-left:5%;
+    margin-top:30px;
+}
+.tablas
+{
+    background-color:white;
+    width:80%;
+    max-width:100px;
+    text-align:center;
+}
+.tablasEncabezados
+{
+    background-color:#111547;
+}
+    .tablasEncabezados th
+    {
+        color:white;
+    }
+    .tablasEncabezados a
+    {
+        color:white;
+    }
+.listaSeleccionTablas
+{
+    margin-left:10%;
+    margin-top:20px;
+}
+.botones 
+{
+    color:#FFFFFF;
+    border-style:none;
+    margin-bottom:30px;
+    background-color:#111547;
+    width:120px;
+    margin-top:30px;
+}
+    .botones:hover 
+    {
+        background-color:#0f205a;
+    }
+.divSelect {
+margin-left:5%;
+    margin-top:20px;
+}
+.divBienvenidno {
+padding-top:25%;
+    padding-bottom:25%;
+    padding-left:5%;
+    padding-right:5%;
+}
+.msnBienvenido{
+    font-size:3em;
+    align-content:center;
+}
+.imagenes{
+    max-height:300px;
+    max-width:300px;
+    min-height:300px;
+    min-width:300px;
+}
+.texto_IP
+{
+border: 1px solid #878786;
+    color:#878786;
+    width:30px;
+    }
+    .texto_IP:focus
+    {
+        border-color:#0f205a;
+    }
+.texto_MAC
+{
+    border: 1px solid #878786;
+    color:#878786;
+    width:20px;
+}
+    .texto_MAC:focus
+    {
+        border-color:#0f205a;
+    }
+.imagenesSlider 
+{
+    position:relative;
+    float:left;
+    display:block;
+    width:150px;
+    height:150px;
+}
+.img1y2 
+{
+    width:150px;
+    opacity:1;
+}
+.img3 
+{
+    width:150px;
+    border:solid;
+    border-color:#EE3423;
+}
+.imagen_detalle
+{
+    width:100%;
+    border-style:solid;
+    border-width:0.5px;
+}
+
+#tablaBotones 
+{
+    position:relative;
+    float:left;
+    height:300px;
+    width:450px;
+}
+    #tablaBotones td 
+    {
+        width:150px;
+        height:150px;
+    }
+.divSlide
+{
+    width:510px;
+    margin-left:5%;
+    margin-top:30px;
+    height:400px;
+    overflow-y:scroll;
+    display:block;
+    background-color:#FFFFFF;
+    border-style:solid;
+    border-width:0.5px;
+}
+.slideContenido{
+    width:510px;
+    height:auto;
+}
+
+.imagen_slide
+{
+    width:150px;
+    height:150px;
+    position:relative;
+    float:left;
+    display:inline-block;
+    margin-bottom:10px;
+    margin-left:10px;
+}
+.tdImagenes{
+    float:left;
+}
+
+.labelImagen {
+position:relative;
+margin-left:50px;
+}
+
+.div_slide_imagen{
+    margin-top:20px;
+}
